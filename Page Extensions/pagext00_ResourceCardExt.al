@@ -19,6 +19,7 @@ pageextension 50100 "CSD Resource Card Extension" extends "Resource Card"
             {
                 Caption = 'Room';
                 Visible = ShowMaxField;
+
                 field("CSD Maximum Participants";"CSD Maximum Participants")
                 {
                     
@@ -29,11 +30,11 @@ pageextension 50100 "CSD Resource Card Extension" extends "Resource Card"
     
     trigger OnAfterGetRecord();
     begin
-        ShowMaxField := ("Type" = "Type"::Machine);
+        ShowMaxField := "Type" = "Type"::Machine;
         CurrPage.Update(false);
     end;
     
     var
         [InDataSet]
-        ShowMaxField: Boolean;
+        ShowMaxField : Boolean;
 }

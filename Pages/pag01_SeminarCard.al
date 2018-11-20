@@ -1,4 +1,4 @@
-page 50101"CSD Seminar Card"
+page 50101 "CSD Seminar Card"
 {
     PageType = Card;
     SourceTable = "CSD Seminar";
@@ -10,7 +10,7 @@ page 50101"CSD Seminar Card"
         {
             group(General)
             {
-                field("No."; "No.")
+                field("No.";"No.")
                 {
                     AssistEdit=true;
                     trigger OnAssistEdit();
@@ -19,47 +19,47 @@ page 50101"CSD Seminar Card"
                             CurrPage.Update;
                     end;
                 }
-                field(Name; Name)
+                field(Name;Name)
                 {
                 }
-                field("Search Name"; "Search Name")
+                field("Search Name";"Search Name")
                 {
                 }
                 field("Seminar Duration";"Seminar Duration")
                 {
                 }
-                field("Minimum Participants"; "Minimum Participants")
+                field("Minimum Participants";"Minimum Participants")
                 {
                 }
-                field("Maximum Participants"; "Maximum Participants")
+                field("Maximum Participants";"Maximum Participants")
                 {
                 }
                 field(Blocked; Blocked)
                 {
                 }
-                field("Last Date Modified"; "Last Date Modified")
+                field("Last Date Modified";"Last Date Modified")
                 {
                 }
             }
             group(Invoicing)
             {
-                field("Gen. Prod. Posting Group"; "Gen. Prod. Posting Group")
+                field("Gen. Prod. Posting Group";"Gen. Prod. Posting Group")
                 {
                 }
-                field("VAT Prod. Posting Group"; "VAT Prod. Posting Group")
+                field("VAT Prod. Posting Group";"VAT Prod. Posting Group")
                 {
                 }
-                field("Seminar Price"; "Seminar Price")
+                field("Seminar Price";"Seminar Price")
                 {
                 }
             }
         }
         area(FactBoxes)
         {
-            systempart("Links"; Links)
+            systempart("Links";Links)
             {
             }
-            systempart("Notes"; Notes)
+            systempart("Notes";Notes)
             {
             }
         }
@@ -74,8 +74,8 @@ page 50101"CSD Seminar Card"
             {
                 action("Co&mments")
                 {
-                    RunObject=page"CSD Seminar Comment Sheet";
-                    RunPageLink = "Table Name"=const(Seminar),"No."=field("No.");
+                    RunObject = page "CSD Seminar Comment Sheet";
+                    RunPageLink = "Table Name" = const(Seminar),"No." = field("No.");
                     Image = Comment;
                     Promoted = true;
                     PromotedIsBig = true;

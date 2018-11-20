@@ -14,12 +14,7 @@ pageextension 50101 "CSD Resource List Extension" extends "Resource List"
             }
         }
     }
-    
-    actions
-    {
-        // Add changes to page actions here
-    }
-    
+
     trigger OnOpenPage();
     begin
         ShowType := (GetFilter("Type") = '');
@@ -28,7 +23,7 @@ pageextension 50101 "CSD Resource List Extension" extends "Resource List"
 
     var
         [InDataSet]
-        ShowMaxField: Boolean;
+        ShowMaxField : Boolean;
         [InDataSet]
-        ShowType: Boolean;
+        ShowType : Boolean;
 }

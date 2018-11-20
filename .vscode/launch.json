@@ -4,13 +4,14 @@
         {
             "type": "al",
             "request": "launch",
-            "name": "Your own server",
+            "name": "localhost",
             "server": "http://localhost",
             "serverInstance": "BC130",
             "authentication": "Windows",
             "startupObjectId": 22,
             "startupObjectType": "Page",
-            "breakOnError": true
+            "breakOnError": true,
+            "schemaUpdateMode": "Recreate"
         }
     ]
 }

@@ -1,4 +1,4 @@
-codeunit 50149 InstallSeminar
+codeunit 50149 "CSD InstallSeminar"
 {
     Subtype = Install;
 
@@ -8,7 +8,9 @@ codeunit 50149 InstallSeminar
             exit;
         InitSetup;
         CreateSeminar;
-        CreateResources;        
+        CreateResources;       
+        CreateProfile; 
+        CreateReportSelection;
     end;
 
     local procedure InitSetup();
@@ -97,6 +99,28 @@ codeunit 50149 InstallSeminar
         Resource.Name:='Room 01';
         Resource.Type:=Resource.Type::Machine;
         if Resource.Insert then;
+    end;
+
+    local procedure CreateProfile()
+    var
+        Profile: record Profile;
+    begin
+        profile.init;
+        profile."Profile ID" := 'SEMINAR';
+        profile.Description := 'Seminar Manager';
+        profile."Role Center ID" := page::"CSD Seminar Manager RoleCenter";
+        if profile.insert then;
+    end;
+
+    local procedure CreateReportSelection()
+    var
+        ReportSelection: record "CSD Seminar Report Selections";
+    begin
+        ReportSelection.init;
+        ReportSelection.Usage := ReportSelection.usage::Registration;
+        ReportSelection.Sequence := '1';
+        ReportSelection."Report ID" := Report::"CSD Seminar Reg. Part. List";
+        if ReportSelection.insert then;
     end;
 
     var

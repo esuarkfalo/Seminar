@@ -109,7 +109,6 @@ table 50132 "CSD Seminar Ledger Entry"
         field(22;"Source Type";Option)
         {
             Caption = 'Source Type';
-            //OptionCaption = '" ,Seminar"';
             OptionCaption = ' ,Seminar';
             OptionMembers = " ",Seminar;
         }

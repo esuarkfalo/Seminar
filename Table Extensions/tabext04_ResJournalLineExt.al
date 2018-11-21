@@ -1,4 +1,4 @@
-tableextension 50104 "CSD ResJournalLineExt" extends "Res. Journal Line"
+tableextension 50104 "CSD Res. Journal Line Ext." extends "Res. Journal Line"
 {
     fields
     {

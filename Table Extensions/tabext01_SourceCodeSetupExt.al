@@ -1,4 +1,4 @@
-tableextension 50101 "CSD SourceCodeSetupExt" extends "Source Code Setup"
+tableextension 50101 "CSD Source Code Setup Ext." extends "Source Code Setup"
 {
     fields
     {

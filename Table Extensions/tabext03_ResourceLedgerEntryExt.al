@@ -1,4 +1,4 @@
-tableextension 50103 "CSD ResourceLedgerEntryExt" extends "Res. Ledger Entry"
+tableextension 50103 "CSD Resource Ledger Entry Ext." extends "Res. Ledger Entry"
 {
     fields
     {

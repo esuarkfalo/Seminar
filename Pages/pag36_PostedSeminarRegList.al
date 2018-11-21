@@ -77,7 +77,7 @@ page 50136  "CSD Posted Seminar Reg. List"
                 {
                     Caption = '&Charges';
                     Image = Costs;
-                    RunObject = Page 50139;
+                    RunObject = Page "CSD Posted Seminar Charges"; //50139;
                     RunPageLink = "Document No."=Field("No.");
                 }
             }

@@ -1,6 +1,6 @@
-report 50101 SeminarRegParticipantList
+report 50101 "CSD Seminar Reg. Part. List"
 {
-    Caption='Seminar Reg.- Participant List';
+    Caption='Seminar Reg. Participant List';
     DefaultLayout=RDLC;
     RDLCLayout='./Layouts/rep01_SeminarRegParticipantList.rdl';
     UsageCategory=ReportsAndAnalysis;

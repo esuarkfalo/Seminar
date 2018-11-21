@@ -116,7 +116,6 @@ table 50131 "CSD Seminar Journal Line"
         field(30;"Source Type";Option)
         {
             Caption = 'Source Type';
-            //OptionCaption = '" ,Seminar"';
             OptionCaption = ' ,Seminar';
             OptionMembers = " ",Seminar;
         }

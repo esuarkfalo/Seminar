@@ -35,6 +35,7 @@ table 50105 "CSD Seminar Report Selections"
                                                                            "Object ID"=Field("Report ID")));
             Caption = 'Report Name';
             FieldClass = FlowField;
+            Editable = false;
         }
     }
 

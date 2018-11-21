@@ -1,4 +1,4 @@
-codeunit 50139 EventSubscriptions
+codeunit 50139 "CSD Event Subscriptions"
 // CSD1.00 - 2018-01-01 - D. E. Veloper
 // Chapter 7 - Lab 2-1
 {

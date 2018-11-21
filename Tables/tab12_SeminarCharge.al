@@ -164,13 +164,9 @@ table 50112 "CSD Seminar Charge"
 
     keys
     {
-        key(Key1;"Document No.","Line No.")
+        key(PK;"Document No.","Line No.")
         {
         }
-    }
-
-    fieldgroups
-    {
     }
 
     trigger OnDelete();

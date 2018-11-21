@@ -1,6 +1,9 @@
 table 50110 "CSD Seminar Reg. Header"
 {
     Caption = 'Seminar Registration Header';
+    LookupPageId= "CSD Seminar Registration List";
+    DrillDownPageId= "CSD Seminar Registration List";
+
     fields
     {
         field(1; "No."; Code[20])

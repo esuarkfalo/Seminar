@@ -165,7 +165,7 @@ table 50111 "CSD Seminar Registration Line"
 
     keys
     {
-        key(Key1; "Document No.", "Line No.")
+        key(PK; "Document No.", "Line No.")
         {
         }
     }
